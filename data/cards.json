@@ -1,0 +1,486 @@
+﻿[
+    {
+        "id":  "card-001",
+        "priority":  1,
+        "title":  "Anniversary Reminder Sticky note",
+        "date":  null,
+        "description":  "I believe this one you drew the nice little heart on it. Because I am very forgetful I suppose.",
+        "front":  "images/cards/card-001-1-front.JPEG",
+        "back":  "images/cards/card-001-2-back.JPEG",
+        "photos":  [
+
+                   ],
+        "memories": ["mem-anniversary"]
+    },
+    {
+        "id":  "card-002",
+        "title":  "Prayer Request Card",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-002-1-front.JPEG",
+        "back":  "images/cards/card-002-2-back.JPEG",
+        "photos":  [
+
+                   ]
+    },
+    {
+        "id":  "card-003",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-003-1-front.JPEG",
+        "back":  "images/cards/card-003-2-back.JPEG",
+        "photos":  [
+
+                   ]
+    },
+    {
+        "id":  "card-004",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-004-1-front.JPEG",
+        "back":  "images/cards/card-004-2-back.JPEG",
+        "photos":  [
+
+                   ]
+    },
+    {
+        "id":  "card-005",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-005-1-front.JPEG",
+        "back":  "images/cards/card-005-2-back.JPEG",
+        "photos":  [
+
+                   ]
+    },
+    {
+        "id":  "card-006",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-006-1-front.JPEG",
+        "back":  "images/cards/card-006-2-back.JPEG",
+        "photos":  [
+
+                   ]
+    },
+    {
+        "id":  "card-007",
+        "priority":  7,
+        "title":  "Mcdonalds Minecraft Movie Card",
+        "date":  null,
+        "description":  "This one we got when we went to McDonalds with Kenzie. For some reason you gave it to me so I kept it. I included pictures of Kenzie because she was there.",
+        "front":  "images/cards/card-007-1-front.JPEG",
+        "back":  "images/cards/card-007-2-back.JPEG",
+        "photos":  [
+        
+                   ],
+        "memories": ["mem-kenzie"]
+
+    },
+    {
+        "id":  "card-008",
+        "priority":  3,
+        "title":  "Central Piedmont Valentine's Day Card",
+        "date":  null,
+        "description":  "This one is pretty self-explanatory. You wrote me a little note wishing me a happy valntines day. It was pretty sweet of you to do.",
+        "front":  "images/cards/card-008-1-front.JPEG",
+        "back":  "images/cards/card-008-2-back.JPEG",
+        "photos":  [
+
+                   ],
+        "memories": ["mem-valentines"]
+    },
+    {
+        "id":  "card-009",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-009-1-front.JPEG",
+        "back":  "images/cards/card-009-2-back.JPEG",
+        "photos":  [
+
+                   ]
+    },
+    {
+        "id":  "card-010",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-010-1-front.JPEG",
+        "back":  "images/cards/card-010-2-back.JPEG",
+        "photos":  [
+
+                   ]
+    },
+    {
+        "id":  "card-011",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-011-1-front.JPEG",
+        "back":  "images/cards/card-011-2-back.JPEG",
+        "photos":  [
+
+                   ]
+    },
+    {
+        "id":  "card-012",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-012-1-front.JPEG",
+        "back":  "images/cards/card-012-2-back.JPEG",
+        "photos":  [
+
+                   ]
+        
+
+    },
+    {
+        "id":  "card-013",
+        "priority":  5,
+        "title":  "Promise Ring",
+        "date":  null,
+        "description":  "The Ring I got you for our latest anniversary! The one that you made me return becasue you didnt like it :(, just kidding of course. I should have gotten you the one that looks like an engagement ring because I know you would have liked it better. uurrg whatever you have the one you wnant now so I'm happy! I also included some photos of me trying on your rings sneakily in your bathroom to try and find out your ring size",
+        "front":  "images/cards/card-013-1-front.JPEG",
+        "back":  "images/cards/card-013-2-back.JPEG",
+        "photos":  [
+        "images/memories/mem-promisering/IMG_1708.JPEG",
+    "images/memories/mem-promisering/IMG_1709.JPEG",
+    "images/memories/mem-promisering/IMG_1710.JPEG",
+    "images/memories/mem-promisering/IMG_1711.JPEG",
+    "images/memories/mem-promisering/IMG_1712.JPEG",
+    "images/memories/mem-promisering/IMG_1713.JPEG",
+    "images/memories/mem-promisering/IMG_1714.JPEG",
+    "images/memories/mem-promisering/IMG_1791.JPEG",
+    "images/memories/mem-promisering/IMG_1792.JPEG",
+    "images/memories/mem-promisering/IMG_1793.JPEG",
+    "images/memories/mem-promisering/IMG_1794.JPEG",
+    "images/memories/mem-promisering/IMG_1795.JPEG",
+    "images/memories/mem-promisering/IMG_1796.JPEG",
+    "images/memories/mem-promisering/IMG_1797.JPEG",
+    "images/memories/mem-promisering/IMG_1798.JPEG",
+    "images/memories/mem-promisering/IMG_1799.JPEG",
+    "images/memories/mem-promisering/IMG_1800.JPEG",
+    "images/memories/mem-promisering/IMG_1801.JPEG",
+    "images/memories/mem-promisering/IMG_1802.JPEG",
+    "images/memories/mem-promisering/IMG_1803.JPEG",
+    "images/memories/mem-promisering/IMG_1804.JPEG",
+    "images/memories/mem-promisering/IMG_3132.JPEG"
+
+                   ],
+        "memories": ["mem-anniversary"]
+    },
+    {
+        "id":  "card-014",
+        "priority":  3,
+        "title":  "Second Valentine's Day Card",
+        "date":  null,
+        "description":  "This one is so sweet, I love it. It must be the first or second valentines day we spent together and I cherish it.",
+        "front":  "images/cards/card-014-1-front.JPEG",
+        "back":  "images/cards/card-014-2-back.JPEG",
+        "photos":  [
+
+                   ],
+        "memories": ["mem-valentines"]
+    },
+    {
+        "id":  "card-015",
+        "priority":  4,
+        "title":  "Third Valentine's Day Card",
+        "date":  null,
+        "description":  "Man this one makes me want to tearup :,). Its so sweet your words mean so much to me. Out of all the cards you've written me I probably reread this one the most beacuase it means so much to me. Love you ",
+        "front":  "images/cards/card-015-1-front.JPEG",
+        "back":  "images/cards/card-015-2-back.JPEG",
+        "photos":  [
+
+                   ],
+        "memories": ["mem-valentines"]
+    },
+    {
+        "id":  "card-016",
+        "priority":  8,
+        "title":  "Artwork from UNCC",
+        "date":  null,
+        "description":  "You gave me this sometime this last semester and I held onto it of course because its from you. Its really cute I kinda wish you made more of these becasue its nice as freak.",
+        "front":  "images/cards/card-016-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+            
+
+                   ],
+        "memories": ["mem-uncc"]
+    },
+    {
+        "id":  "card-017",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-017-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+
+                   ]
+    },
+    {
+        "id":  "card-018",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-018-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+            "images/memories/mem-levine/IMG_4175.JPEG",
+    "images/memories/mem-levine/IMG_4177.JPEG",
+    "images/memories/mem-levine/IMG_4178.JPEG",
+    "images/memories/mem-levine/IMG_4179.JPEG",
+    "images/memories/mem-levine/IMG_4181.JPEG",
+    "images/memories/mem-levine/IMG_4443.JPEG",
+    "images/memories/mem-levine/IMG_5958.JPEG",
+    "images/memories/mem-levine/IMG_5959.JPEG",
+    "images/memories/mem-levine/IMG_5987.JPEG",
+    "images/memories/mem-levine/IMG_5988.JPEG",
+    "images/memories/mem-levine/IMG_6133.JPEG",
+    "images/memories/mem-levine/IMG_6134.JPEG",
+    "images/memories/mem-levine/IMG_6135.JPEG",
+    "images/memories/mem-levine/IMG_6136.JPEG",
+    "images/memories/mem-levine/IMG_6224.JPEG",
+    "images/memories/mem-levine/IMG_6225.JPEG",
+    "images/memories/mem-levine/IMG_6226.JPEG"
+
+                   ]
+    },
+    {
+        "id":  "card-019",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-019-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+
+                   ]
+    },
+    {
+        "id":  "card-020",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-020-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+
+                   ]
+    },
+    {
+        "id":  "card-021",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-021-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+            "images/memories/mem-barbie/71700140663__EAD7B8ED-AC9E-4F88-9405-141701761DBD.JPEG",
+    "images/memories/mem-barbie/71700518710__72BC73D3-7167-4391-B297-CD3613EC70E1.JPEG",
+    "images/memories/mem-barbie/71700555840__45231EFA-9D31-440A-801F-A320B3FC80B7.JPEG",
+    "images/memories/mem-barbie/71700726299__4B924EC3-7F70-4DDA-991E-142B87257108.JPEG",
+    "images/memories/mem-barbie/71700858725__9C0F984E-7367-47EB-9252-03EFE28B7F0D.JPEG",
+    "images/memories/mem-barbie/IMG_3321.JPEG",
+    "images/memories/mem-barbie/IMG_3628.JPEG",
+    "images/memories/mem-barbie/IMG_3629.JPEG",
+    "images/memories/mem-barbie/IMG_3633.JPEG",
+    "images/memories/mem-barbie/IMG_3634.JPEG",
+    "images/memories/mem-barbie/IMG_3635.JPEG",
+    "images/memories/mem-barbie/IMG_3636.JPEG",
+    "images/memories/mem-barbie/IMG_3637.JPEG",
+    "images/memories/mem-barbie/IMG_3638.JPEG",
+    "images/memories/mem-barbie/IMG_3639.JPEG",
+    "images/memories/mem-barbie/IMG_3640.JPEG",
+    "images/memories/mem-barbie/IMG_3641.JPEG",
+    "images/memories/mem-barbie/IMG_3642.JPEG",
+    "images/memories/mem-barbie/IMG_3646.JPEG",
+    "images/memories/mem-barbie/IMG_3647.JPEG",
+    "images/memories/mem-barbie/IMG_3648.JPEG",
+    "images/memories/mem-barbie/IMG_3649.JPEG",
+    "images/memories/mem-barbie/IMG_3650.JPEG",
+    "images/memories/mem-barbie/IMG_3651.JPEG",
+    "images/memories/mem-barbie/IMG_3652.JPEG",
+    "images/memories/mem-barbie/IMG_3653.JPEG"
+
+                   ]
+    },
+    {
+        "id":  "card-022",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-022-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+            "images/memories/mem-airport/IMG_1915.JPEG"
+
+                   ]
+    },
+    {
+        "id":  "card-023",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-023-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+            "images/memories/mem-airport/IMG_1915.JPEG"
+
+                   ]
+    },
+    {
+        "id":  "card-024",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-024-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+            "images/memories/mem-basketball/IMG_0747.JPEG",
+    "images/memories/mem-basketball/IMG_0748.JPEG",
+    "images/memories/mem-basketball/IMG_0749.JPEG",
+    "images/memories/mem-basketball/IMG_0750.JPEG",
+    "images/memories/mem-basketball/IMG_0751.JPEG",
+    "images/memories/mem-basketball/IMG_0752.JPEG",
+    "images/memories/mem-basketball/IMG_0753.JPEG",
+    "images/memories/mem-basketball/IMG_0757.JPEG"
+
+                   ]
+    },
+    {
+        "id":  "card-025",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-025-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+
+                   ]
+    },
+    {
+        "id":  "card-026",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-026-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+
+                   ]
+    },
+    {
+        "id":  "card-027",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-027-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+            "images/memories/mem-airport/IMG_1915.JPEG"
+
+                   ]
+    },
+    {
+        "id":  "card-028",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-028-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+
+                   ],
+        "memories": ["mem-uncc"]
+    },
+    {
+        "id":  "card-029",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-029-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+
+                   ]
+    },
+    {
+        "id":  "card-030",
+        "title":  "",
+        "date":  null,
+        "description":  "This is the medal I won in the basketball tournament that you came and watched! You looked so good that day I coudln't keep my eyes off you in between plays. I hope you can come to more events like that, its puts the pressure on me to perform well, but its worth it to see you cheering me on.",
+        "front":  "images/cards/card-030-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+
+                   ]
+    },
+    {
+        "id":  "card-031",
+        "priority":  2,
+        "title":  "Second Anniversary Card",
+        "date":  null,
+        "description":  "CHARLOTTE KNIGHTS! I appreciate your kind words in this card. I agree that we both grew a ton during that period of our lives. Baseball games make for the best date nights. One of my favorite memories with you is going to a game with the giant JBL speaker in the back seat of my car, playing bad bunny while we ride through downtown.",
+        "front":  "images/cards/card-031-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+        "images/memories/mem-knights/71150759328__5AA5D5BF-90F3-40EA-B019-CA077828714C.JPEG",
+    "images/memories/mem-knights/IMG_0445.JPEG",
+    "images/memories/mem-knights/IMG_0446.JPEG",
+    "images/memories/mem-knights/IMG_0452.JPEG",
+    "images/memories/mem-knights/IMG_1767.JPEG",
+    "images/memories/mem-knights/IMG_1768.JPEG",
+    "images/memories/mem-knights/IMG_1769.JPEG",
+    "images/memories/mem-knights/IMG_1770.JPEG",
+    "images/memories/mem-knights/IMG_1771.JPEG",
+    "images/memories/mem-knights/IMG_1772.JPEG",
+    "images/memories/mem-knights/IMG_1776.JPG",
+    "images/memories/mem-knights/IMG_1777.JPG",
+    "images/memories/mem-knights/IMG_6787.JPEG",
+    "images/memories/mem-knights/IMG_6788.JPEG",
+    "images/memories/mem-knights/IMG_6789.JPEG",
+    "images/memories/mem-knights/IMG_6790.JPEG",
+    "images/memories/mem-knights/IMG_6791.JPEG",
+    "images/memories/mem-knights/IMG_6792.JPEG",
+    "images/memories/mem-knights/IMG_6793.JPEG",
+    "images/memories/mem-knights/IMG_6794.JPEG",
+    "images/memories/mem-knights/IMG_6795.JPEG"
+
+                   ]
+        
+    },
+    {
+        "id":  "card-032",
+        "title":  "",
+        "date":  null,
+        "description":  "",
+        "front":  "images/cards/card-032-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+
+                   ]
+    },
+    {
+        "id":  "card-033",
+        "priority":  9,
+        "title":  "Artwork from UNCC 2 ",
+        "date":  null,
+        "description":  "This is another piece that you made in your art class. The colors represent your mood throught the semester, I think? Yellow was happy orange wasanzious dark blue was neutral? IDK it was something like that. I cant seem to remember what the red part is suppodes to represent, perhaps anger because I always piss you off? Anyways I really like this piece its very abstract and artsy. I think the idea behind combining your emotion into art in the physical world. I would like to see a complete version of this.",
+        "front":  "images/cards/card-33-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+
+                   ],
+        "memories": ["mem-uncc"]
+
+    }
+]

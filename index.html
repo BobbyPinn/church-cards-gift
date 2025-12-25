@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Sundays</title>
+
+    <!-- Swiper carousel library -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="wrap">
+        <div class="brand-title">Our Sundays</div>
+        <div class="brand-subtitle">Scroll through cards + little moments.</div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+  <h1>Church Cards</h1>
+  <p>Tap a card to see Side 1 / Side 2 and any photos from that day.</p>
+
+  <div class="controls">
+    <input id="searchInput" type="text" placeholder="Search (Valentine, anniversary, card-014...)" />
+    <select id="filterSelect">
+      <option value="all">All</option>
+      <option value="hasBack">Has back side</option>
+      <option value="singles">Singles only</option>
+      <option value="hasPhotos">Has photos</option>
+      <option value="hasMemories">Has shared memory</option>
+    </select>
+    <button id="clearBtn" type="button">Clear</button>
+  </div>
+
+  <div class="stats" id="stats"></div>
+</section>
+
+
+      <section class="carousel">
+        <div class="swiper">
+          <div class="swiper-wrapper" id="swiperWrapper"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <button class="modal-close" id="modalClose">✕</button>
+
+        <div class="modal-head">
+          <div class="modal-date" id="modalDate"></div>
+          <div class="modal-title" id="modalTitle"></div>
+          <div class="modal-desc" id="modalDesc"></div>
+        </div>
+
+        <div class="modal-body">
+          <div class="two-col">
+            <div class="panel">
+              <div class="panel-title">Side 1</div>
+              <img class="big-img" id="side1Img" alt="Side 1" />
+            </div>
+
+            <div class="panel">
+              <div class="panel-title">Side 2</div>
+              <img class="big-img" id="side2Img" alt="Side 2" />
+            </div>
+          </div>
+
+          <div class="panel" style="margin-top:14px;">
+            <div class="panel-title">Photos from that day</div>
+            <div class="gallery" id="gallery"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

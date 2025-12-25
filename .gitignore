@@ -1,0 +1,9 @@
+# Don’t upload media (too big)
+images/
+*.mov
+*.mp4
+
+# Usual junk
+.DS_Store
+Thumbs.db
+node_modules/

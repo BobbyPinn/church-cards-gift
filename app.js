@@ -140,6 +140,11 @@ function makeSlide(card, index) {
   return slide;
 }
 
+function isVideo(src) {
+  return /\.(mp4|webm|mov)$/i.test(src);
+}
+
+
 function openModal(card) {
   modalDate.textContent = card.date || "";
   modalTitle.textContent = card.title || card.id || "";
@@ -168,12 +173,23 @@ function openModal(card) {
   }
 
   merged.forEach((src) => {
+  if (isVideo(src)) {
+    const vid = document.createElement("video");
+    vid.src = src;
+    vid.controls = true;
+    vid.playsInline = true;
+    vid.preload = "metadata";
+
+    modalGallery.appendChild(vid);
+  } else {
     const img = document.createElement("img");
     img.src = src;
     img.alt = "Photo";
     img.addEventListener("click", () => window.open(src, "_blank"));
     modalGallery.appendChild(img);
-  });
+  }
+});
+
 
 
   overlay.classList.add("open");

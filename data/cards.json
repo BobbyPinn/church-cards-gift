@@ -4,19 +4,84 @@
         "priority":  1,
         "title":  "Anniversary Reminder Sticky note",
         "date":  null,
-        "description":  "I believe this one you drew the nice little heart on it. Because I am very forgetful I suppose.",
+        "description":  "I believe this one you drew the nice little heart on it first, then reminded me on the back the day of our anniversary, because I am very forgetful I suppose. The first couple pictures were from when I was picking out the right flowers t oask you out. The fourth is likely me confirming with Ava that the candy haul would satisfy you. Shortly after that last picture was taken in the car ava called me and her dad said 'well since Kylies basically my daughter what are your intentions with Kylie?'. Nervous, I responded, 'To spend time with her and make her happy'. The photo of the coupons I made for you was taken at 4:20 in the morning :,). The rest are from our anniversary day! Pretty sure the photos of you in the car were because you were hangry and there was traffic. Then you are seen eating a crumbl cookie. I love you so much.",
         "front":  "images/cards/card-001-1-front.JPEG",
         "back":  "images/cards/card-001-2-back.JPEG",
         "photos":  [
-
-                   ],
-        "memories": ["mem-anniversary"]
+        "images/memories/mem-anniversary1/67692656276__9FA7A770-6DBE-4F40-A06D-8EB96B2494EF.JPEG",
+    "images/memories/mem-anniversary1/67692657619__B0489859-97F0-4BC8-A2D6-4CF6D6B116CC.JPEG",
+    "images/memories/mem-anniversary1/67692679121__A04833F2-FA4D-47A9-98FF-06E235FCFCE5.JPEG",
+    "images/memories/mem-anniversary1/67692838390__5C2B0B39-E467-4A0A-9F22-E8400687D71A.JPEG",
+    "images/memories/mem-anniversary1/67693080727__6B84E5BD-D8DE-4EDD-87E5-134726DA7ABA.JPEG",
+    "images/memories/mem-anniversary1/67693080727__6B84E5BD-D8DE-4EDD-87E5-134726DA7ABA1.JPEG",
+    "images/memories/mem-anniversary1/67693080727__6B84E5BD-D8DE-4EDD-87E5-134726DA7ABA2.MOV",
+    "images/memories/mem-anniversary1/IMG_0840.JPEG",
+    "images/memories/mem-anniversary1/IMG_0842.JPEG",
+    "images/memories/mem-anniversary1/IMG_0847.JPEG",
+    "images/memories/mem-anniversary1/IMG_0855.JPG",
+    "images/memories/mem-anniversary1/IMG_0856.JPEG",
+    "images/memories/mem-anniversary1/IMG_0857.JPEG",
+    "images/memories/mem-anniversary1/IMG_0862.JPEG",
+    "images/memories/mem-anniversary1/IMG_0868.JPEG",
+    "images/memories/mem-anniversary1/IMG_0869.JPG",
+    "images/memories/mem-anniversary1/IMG_0870.JPG",
+    "images/memories/mem-anniversary1/IMG_0871.JPEG",
+    "images/memories/mem-anniversary1/IMG_0872.JPEG",
+    "images/memories/mem-anniversary1/IMG_0873.JPEG",
+    "images/memories/mem-anniversary1/IMG_0874.JPEG",
+    "images/memories/mem-anniversary1/IMG_0875.JPEG",
+    "images/memories/mem-anniversary1/recorded-1697940551254.mp4"
+                   ]
+        
+    },
+    {
+        "id":  "card-025",
+        "priority":  2.5,
+        "title":  "Our first Valentine's Day... Kinda?",
+        "date":  null,
+        "description":  "Also didnt have a picture for this so I hope this one works for you <3. This was during our talking stage and I guess I wasnt ready to ask you to be mine yet. How could we ever forget the cute stuff card your parents got you as a joke.",
+        "front":  "images/cards/card-025-1-front.JPEG",
+        "back":  null,
+        "photos":  [
+         "images/memories/mem-valentines1/66654978526__F94EB248-62DE-4427-B8CB-26797ABF3918.JPEG",
+    "images/memories/mem-valentines1/IMG_6186.JPEG",
+    "images/memories/mem-valentines1/lp_image.JPEG",
+    "images/memories/mem-valentines1/lp_image.MOV",
+    "images/memories/mem-valentines1/lp_image-1.JPEG",
+    "images/memories/mem-valentines1/lp_image-1.MOV",
+    "images/memories/mem-valentines1/lp_image-10.JPEG",
+    "images/memories/mem-valentines1/lp_image-10.MOV",
+    "images/memories/mem-valentines1/lp_image-11.JPEG",
+    "images/memories/mem-valentines1/lp_image-11.MOV",
+    "images/memories/mem-valentines1/lp_image-12.JPEG",
+    "images/memories/mem-valentines1/lp_image-12.MOV",
+    "images/memories/mem-valentines1/lp_image-13.JPEG",
+    "images/memories/mem-valentines1/lp_image-13.MOV",
+    "images/memories/mem-valentines1/lp_image-2.JPEG",
+    "images/memories/mem-valentines1/lp_image-2.MOV",
+    "images/memories/mem-valentines1/lp_image-3.JPEG",
+    "images/memories/mem-valentines1/lp_image-3.MOV",
+    "images/memories/mem-valentines1/lp_image-4.JPEG",
+    "images/memories/mem-valentines1/lp_image-4.MOV",
+    "images/memories/mem-valentines1/lp_image-5.JPEG",
+    "images/memories/mem-valentines1/lp_image-5.MOV",
+    "images/memories/mem-valentines1/lp_image-6.JPEG",
+    "images/memories/mem-valentines1/lp_image-6.MOV",
+    "images/memories/mem-valentines1/lp_image-7.JPEG",
+    "images/memories/mem-valentines1/lp_image-7.MOV",
+    "images/memories/mem-valentines1/lp_image-8.JPEG",
+    "images/memories/mem-valentines1/lp_image-8.MOV",
+    "images/memories/mem-valentines1/lp_image-9.JPEG",
+    "images/memories/mem-valentines1/lp_image-9.MOV",
+    "images/memories/mem-valentines1/RPReplay_Final1644891973.mp4"
+                   ]
     },
     {
         "id":  "card-002",
-        "title":  "Prayer Request Card",
+        "priority"  :  16,
+        "title":  "Church Card 1 (12/13/2025)",
         "date":  null,
-        "description":  "",
+        "description":  "You remember this! Its from two sudnays ago when I kept bothering you and you had to tell me to freak off. It did make me sad but I understood that I was being distracting, I just figured since we usuially play games or doodle on them you wouldn't mind. I wish I kept more of these I know there tons that I could have put on here but its not a big deal.",
         "front":  "images/cards/card-002-1-front.JPEG",
         "back":  "images/cards/card-002-2-back.JPEG",
         "photos":  [
@@ -25,20 +90,26 @@
     },
     {
         "id":  "card-003",
-        "title":  "",
+        "priority":  17,
+        "title":  "Church Card  (9/21/2025)",
         "date":  null,
-        "description":  "",
+        "description":  "This one I have a date for so I was able to go back and find a few videos that you took of me climbing. I know you hate taking up time from YOUR day, but I really like climbing and I like when you go with me, and I especialyl like when you record me and cheer me on. Also feel free to enjoy the photo of Chopper",
         "front":  "images/cards/card-003-1-front.JPEG",
         "back":  "images/cards/card-003-2-back.JPEG",
         "photos":  [
+         "images/memories/mem-september21/IMG_2366.MP4",
+    "images/memories/mem-september21/IMG_2367.MP4",
+    "images/memories/mem-september21/IMG_4145.JPEG",
+    "images/memories/mem-september21/IMG_4293.MP4"    
 
                    ]
     },
     {
         "id":  "card-004",
-        "title":  "",
+        "priority":  18,
+        "title":  "Church Card",
         "date":  null,
-        "description":  "",
+        "description":  "I dropped mad wisdom on you with this one. This one must be fairly recent because I remember writing it not too long ago. I think I wrote David is L mans because he was lustful for his sons wife or something like that.",
         "front":  "images/cards/card-004-1-front.JPEG",
         "back":  "images/cards/card-004-2-back.JPEG",
         "photos":  [
@@ -47,20 +118,33 @@
     },
     {
         "id":  "card-005",
-        "title":  "",
+        "priority":  11,
+        "title":  "Birthday Card",
         "date":  null,
-        "description":  "",
+        "description":  "I imagine whe nyou bought this you went to the register and the cashier read it and you got embarrased. I coudlnt find any good pictures or videos of us together on any of my birthdays, but I found some videos fro mthe cruise on my birthday, and a couplt of when we went to top gold with Isaniael, Emmanuel, and Isaias. Also the video of my deadlifting 315 at the gym with Elliot and Cyrus",
         "front":  "images/cards/card-005-1-front.JPEG",
         "back":  "images/cards/card-005-2-back.JPEG",
         "photos":  [
+        "images/memories/mem-birthday/0C86A706-8AC5-4954-8A90-907C307D17F0.MP4",
+    "images/memories/mem-birthday/21FF97E2-7C65-4BD1-8EB0-DBE599E5CA96.mp4",
+    "images/memories/mem-birthday/96A9C474-F865-4176-8AA3-B86719C9C941.MP4",
+    "images/memories/mem-birthday/A4DF90DB-AE15-4DF7-81BD-6BBC413827BD.MP4",
+    "images/memories/mem-birthday/EBB383E4-B85F-4576-A046-6D96A5286C12.mp4",
+    "images/memories/mem-birthday/IMG_0608.MP4",
+    "images/memories/mem-birthday/IMG_3079.MP4",
+    "images/memories/mem-birthday/IMG_8821.JPG",
+    "images/memories/mem-birthday/recorded-26311318582849.mp4",
+    "images/memories/mem-birthday/recorded-26366616391622.mp4",
+    "images/memories/mem-birthday/v12044gd0000cu84ahnog65ktho19700.MP4"
 
                    ]
     },
     {
         "id":  "card-006",
-        "title":  "",
+        "priority":  31,
+        "title":  "Little Sicky Note",
         "date":  null,
-        "description":  "",
+        "description":  "I think you wrote this ans left it in my car. I love when you do stuff like this.",
         "front":  "images/cards/card-006-1-front.JPEG",
         "back":  "images/cards/card-006-2-back.JPEG",
         "photos":  [
@@ -86,19 +170,47 @@
         "priority":  3,
         "title":  "Central Piedmont Valentine's Day Card",
         "date":  null,
-        "description":  "This one is pretty self-explanatory. You wrote me a little note wishing me a happy valntines day. It was pretty sweet of you to do.",
+        "description":  "Our First real valentined day! This one is pretty self-explanatory. You wrote me a little note wishing me a happy valntines day. I guess I was workign the day before I felt like id include those pictures. Seems like it was a school day but luckily we were out by 1 pm and eating chikfila at by my house. The flowers were fro mthat night and we actualyl went out the next day to. We went to Texas Roadhouse our favortie. I got uncomfroatble looking at the pciures of use sitting side by side, I will never be doing that again.",
         "front":  "images/cards/card-008-1-front.JPEG",
         "back":  "images/cards/card-008-2-back.JPEG",
         "photos":  [
-
-                   ],
-        "memories": ["mem-valentines"]
+        "images/memories/mem-valentines2/69810235382__BED5B63E-6F14-44A0-97ED-36689D08ACAD.JPEG",
+    "images/memories/mem-valentines2/69812768419__2F6C63E4-B737-47A7-A72F-16F9BA29AE55.JPEG",
+    "images/memories/mem-valentines2/69818157213__754EA0D4-A9DF-49F0-B868-E7C2BA04F1A6.JPEG",
+    "images/memories/mem-valentines2/6ECC2634-2A0A-4888-9269-263A5E5C9B35.mp4",
+    "images/memories/mem-valentines2/IMG_9313.JPEG",
+    "images/memories/mem-valentines2/IMG_9313.MOV",
+    "images/memories/mem-valentines2/IMG_9314.JPEG",
+    "images/memories/mem-valentines2/IMG_9314.MOV",
+    "images/memories/mem-valentines2/IMG_9315.JPEG",
+    "images/memories/mem-valentines2/IMG_9315.MOV",
+    "images/memories/mem-valentines2/IMG_9323.JPEG",
+    "images/memories/mem-valentines2/IMG_9323.MOV",
+    "images/memories/mem-valentines2/IMG_9324.JPEG",
+    "images/memories/mem-valentines2/IMG_9324.MOV",
+    "images/memories/mem-valentines2/IMG_9325.JPEG",
+    "images/memories/mem-valentines2/IMG_9325.MOV",
+    "images/memories/mem-valentines2/IMG_9326.JPEG",
+    "images/memories/mem-valentines2/IMG_9326.MOV",
+    "images/memories/mem-valentines2/IMG_9327.JPEG",
+    "images/memories/mem-valentines2/IMG_9327.MOV",
+    "images/memories/mem-valentines2/IMG_9328.JPEG",
+    "images/memories/mem-valentines2/IMG_9328.MOV",
+    "images/memories/mem-valentines2/IMG_9329.JPEG",
+    "images/memories/mem-valentines2/IMG_9329.MOV",
+    "images/memories/mem-valentines2/IMG_9330.JPEG",
+    "images/memories/mem-valentines2/IMG_9330.MOV",
+    "images/memories/mem-valentines2/IMG_9331.JPEG",
+    "images/memories/mem-valentines2/IMG_9331.MOV"
+                   ]
+        
     },
     {
         "id":  "card-009",
-        "title":  "",
+        "priority":  23,
+        "title":  "Hawaii Postcard 1",
         "date":  null,
-        "description":  "",
+        "description":  "These were the ncie postcards you got me from Hawaii. I really like the designs on them, and the pictures you included are precious. I wish we could go to Hawaii together sometime....",
         "front":  "images/cards/card-009-1-front.JPEG",
         "back":  "images/cards/card-009-2-back.JPEG",
         "photos":  [
@@ -107,9 +219,10 @@
     },
     {
         "id":  "card-010",
-        "title":  "",
+        "priority":  24,
+        "title":  "Hawaii Postcard 2",
         "date":  null,
-        "description":  "",
+        "description":  "hese were the ncie postcards you got me from Hawaii. I really like the designs on them, and the pictures you included are precious. I wish we could go to Hawaii together sometime....",
         "front":  "images/cards/card-010-1-front.JPEG",
         "back":  "images/cards/card-010-2-back.JPEG",
         "photos":  [
@@ -118,9 +231,10 @@
     },
     {
         "id":  "card-011",
-        "title":  "",
+        "priority":  25,
+        "title":  "Hawaii Postcard 3",
         "date":  null,
-        "description":  "",
+        "description":  "hese were the ncie postcards you got me from Hawaii. I really like the designs on them, and the pictures you included are precious. I wish we could go to Hawaii together sometime....",
         "front":  "images/cards/card-011-1-front.JPEG",
         "back":  "images/cards/card-011-2-back.JPEG",
         "photos":  [
@@ -129,9 +243,10 @@
     },
     {
         "id":  "card-012",
-        "title":  "",
+        "priority":  26,
+        "title":  "Hawaii Postcard 4",
         "date":  null,
-        "description":  "",
+        "description":  "hese were the ncie postcards you got me from Hawaii. I really like the designs on them, and the pictures you included are precious. I wish we could go to Hawaii together sometime....",
         "front":  "images/cards/card-012-1-front.JPEG",
         "back":  "images/cards/card-012-2-back.JPEG",
         "photos":  [
@@ -142,7 +257,7 @@
     },
     {
         "id":  "card-013",
-        "priority":  5,
+        "priority":  2.3,
         "title":  "Promise Ring",
         "date":  null,
         "description":  "The Ring I got you for our latest anniversary! The one that you made me return becasue you didnt like it :(, just kidding of course. I should have gotten you the one that looks like an engagement ring because I know you would have liked it better. uurrg whatever you have the one you wnant now so I'm happy! I also included some photos of me trying on your rings sneakily in your bathroom to try and find out your ring size",
@@ -172,21 +287,40 @@
     "images/memories/mem-promisering/IMG_1804.JPEG",
     "images/memories/mem-promisering/IMG_3132.JPEG"
 
-                   ],
-        "memories": ["mem-anniversary"]
+                   ]
+        
     },
     {
         "id":  "card-014",
         "priority":  3,
         "title":  "Second Valentine's Day Card",
         "date":  null,
-        "description":  "This one is so sweet, I love it. It must be the first or second valentines day we spent together and I cherish it.",
+        "description":  "This one is so sweet, I love when you hand make me cards like this. This is the valentines where I amde those little hearts and asked you in my car. You looked so cute the day I aked you to be my valentine. We were also lucky enough to be able to dine at daves hot chicken. Honeslty I love Dave's so I coudlnt care less habberdish was full.",
         "front":  "images/cards/card-014-1-front.JPEG",
         "back":  "images/cards/card-014-2-back.JPEG",
         "photos":  [
-
-                   ],
-        "memories": ["mem-valentines"]
+        "images/memories/mem-valentines3/2C3FBD5E-8768-4299-BE77-A7F1A9D1AE66.jpg",
+    "images/memories/mem-valentines3/69812768419__2F6C63E4-B737-47A7-A72F-16F9BA29AE55.JPEG",
+    "images/memories/mem-valentines3/IMG_5758.JPEG",
+    "images/memories/mem-valentines3/IMG_5758.MOV",
+    "images/memories/mem-valentines3/IMG_5763.JPEG",
+    "images/memories/mem-valentines3/IMG_5764.JPEG",
+    "images/memories/mem-valentines3/IMG_5767.JPEG",
+    "images/memories/mem-valentines3/IMG_5768.JPEG",
+    "images/memories/mem-valentines3/IMG_5769.JPEG",
+    "images/memories/mem-valentines3/IMG_5770.JPEG",
+    "images/memories/mem-valentines3/IMG_5771.JPG",
+    "images/memories/mem-valentines3/IMG_5799.JPEG",
+    "images/memories/mem-valentines3/IMG_5800.JPEG",
+    "images/memories/mem-valentines3/IMG_5802.JPEG",
+    "images/memories/mem-valentines3/IMG_5803.JPEG",
+    "images/memories/mem-valentines3/IMG_5806.JPEG",
+    "images/memories/mem-valentines3/IMG_5808.JPEG",
+    "images/memories/mem-valentines3/IMG_5809.JPEG",
+    "images/memories/mem-valentines3/IMG_5817.JPEG",
+    "images/memories/mem-valentines3/IMG_5818.JPEG",
+    "images/memories/mem-valentines3/IMG_6186.JPEG"
+                   ]
     },
     {
         "id":  "card-015",
@@ -217,9 +351,10 @@
     },
     {
         "id":  "card-017",
-        "title":  "",
+        "priority":  19,
+        "title":  "Church Card",
         "date":  null,
-        "description":  "",
+        "description":  "I remember this one pretty vividly as well, cant be form too long ago. We played a fun little game where I wrote one word then you wrote the next and we worked together to string a story along. It was fun I liked it.",
         "front":  "images/cards/card-017-1-front.JPEG",
         "back":  null,
         "photos":  [
@@ -228,17 +363,23 @@
     },
     {
         "id":  "card-018",
-        "title":  "",
+        "priority":  11,
+        "title":  "CPCC Levine Letter",
         "date":  null,
-        "description":  "",
+        "description":  "Well well well, its embarassing to admit but  this is the first time I realized I didnt know how to spell your last name. I had an assingment in my englihs class where we had to make an evelope to someone. Natuerally I chose you and I guesss this was the first tiem I ever actualyl spelled out your last name, so naturally I spelled it with an 'e'. Then whe nyo ufound it you scolded me for not knowing how to spell your last name when wed alrayd been dating for who knows how long. Anyhow I decided to put all the images Icould find of us from our short stint at Levine campus! Those were fun times, I miss meeting up with you there between classes.",
         "front":  "images/cards/card-018-1-front.JPEG",
         "back":  null,
         "photos":  [
-            "images/memories/mem-levine/IMG_4175.JPEG",
+             "images/memories/mem-levine/IMG_4175.JPEG",
     "images/memories/mem-levine/IMG_4177.JPEG",
     "images/memories/mem-levine/IMG_4178.JPEG",
     "images/memories/mem-levine/IMG_4179.JPEG",
     "images/memories/mem-levine/IMG_4181.JPEG",
+    "images/memories/mem-levine/IMG_4182.MP4",
+    "images/memories/mem-levine/IMG_4183.MP4",
+    "images/memories/mem-levine/IMG_4183-1.MP4",
+    "images/memories/mem-levine/IMG_4184.MP4",
+    "images/memories/mem-levine/IMG_4440.MP4",
     "images/memories/mem-levine/IMG_4443.JPEG",
     "images/memories/mem-levine/IMG_5958.JPEG",
     "images/memories/mem-levine/IMG_5959.JPEG",
@@ -256,9 +397,10 @@
     },
     {
         "id":  "card-019",
-        "title":  "",
+        "priority":  20,
+        "title":  "Church Card",
         "date":  null,
-        "description":  "",
+        "description":  "This is the one where I beleive you made me write your name with my left hand. Then I also wrote my name in cursive very ugily",
         "front":  "images/cards/card-019-1-front.JPEG",
         "back":  null,
         "photos":  [
@@ -267,9 +409,10 @@
     },
     {
         "id":  "card-020",
-        "title":  "",
+        "priority":  22,
+        "title":  "Church Letter",
         "date":  null,
-        "description":  "",
+        "description":  "I get the feeling this one was around Christams time last year. I was keeping track of all the times that one older guy in front of us said certain words. He was very passionate that day it seems. I'm counting 14 amens, 8 mhms, and a woo. I wonder what Kenny was preaching about that day, whatever it was must have hit close to home with that guy. I do remember a funny little incident invloving that guy. Once during service Kenny asked a rhetorical question, the answer to which was obviously no, but that guy yelled out 'YES!'. Gosh the second hand embarassemtn was so bad. That guys always a hoot, I hope hes doing alright I havent seen him in a while.",
         "front":  "images/cards/card-020-1-front.JPEG",
         "back":  null,
         "photos":  [
@@ -278,70 +421,72 @@
     },
     {
         "id":  "card-021",
-        "title":  "",
+        "priority":  12,
+        "title":  "Barbie Movie Tickets",
         "date":  null,
-        "description":  "",
+        "description":  "This is my ticket from when went to see the barbie movie with Ava senior year. I thought those pictures were from the same day, turns out they are not but I put them in there anyways because why not? That movie was great btw just ruined halfway through when that guy wouldnt stop tapping his foot.",
         "front":  "images/cards/card-021-1-front.JPEG",
         "back":  null,
         "photos":  [
-            "images/memories/mem-barbie/71700140663__EAD7B8ED-AC9E-4F88-9405-141701761DBD.JPEG",
-    "images/memories/mem-barbie/71700518710__72BC73D3-7167-4391-B297-CD3613EC70E1.JPEG",
-    "images/memories/mem-barbie/71700555840__45231EFA-9D31-440A-801F-A320B3FC80B7.JPEG",
-    "images/memories/mem-barbie/71700726299__4B924EC3-7F70-4DDA-991E-142B87257108.JPEG",
-    "images/memories/mem-barbie/71700858725__9C0F984E-7367-47EB-9252-03EFE28B7F0D.JPEG",
-    "images/memories/mem-barbie/IMG_3321.JPEG",
-    "images/memories/mem-barbie/IMG_3628.JPEG",
-    "images/memories/mem-barbie/IMG_3629.JPEG",
-    "images/memories/mem-barbie/IMG_3633.JPEG",
-    "images/memories/mem-barbie/IMG_3634.JPEG",
-    "images/memories/mem-barbie/IMG_3635.JPEG",
-    "images/memories/mem-barbie/IMG_3636.JPEG",
-    "images/memories/mem-barbie/IMG_3637.JPEG",
-    "images/memories/mem-barbie/IMG_3638.JPEG",
-    "images/memories/mem-barbie/IMG_3639.JPEG",
-    "images/memories/mem-barbie/IMG_3640.JPEG",
-    "images/memories/mem-barbie/IMG_3641.JPEG",
-    "images/memories/mem-barbie/IMG_3642.JPEG",
-    "images/memories/mem-barbie/IMG_3646.JPEG",
+            
     "images/memories/mem-barbie/IMG_3647.JPEG",
-    "images/memories/mem-barbie/IMG_3648.JPEG",
-    "images/memories/mem-barbie/IMG_3649.JPEG",
-    "images/memories/mem-barbie/IMG_3650.JPEG",
-    "images/memories/mem-barbie/IMG_3651.JPEG",
-    "images/memories/mem-barbie/IMG_3652.JPEG",
-    "images/memories/mem-barbie/IMG_3653.JPEG"
+    "images/memories/mem-barbie/IMG_3648.JPEG"
+    
 
                    ]
     },
     {
         "id":  "card-022",
-        "title":  "",
+        "priority":  29,
+        "title":  "Airport Thing",
         "date":  null,
-        "description":  "",
+        "description":  "This is an airport thing, Now that I'm making this I feel creepy for having any this, but I have it so...",
         "front":  "images/cards/card-022-1-front.JPEG",
         "back":  null,
         "photos":  [
-            "images/memories/mem-airport/IMG_1915.JPEG"
+            "images/memories/mem-airport/IMG_1915.JPEG",
+            "images/memories/mem-April24/IMG_1460.JPEG",
+    "images/memories/mem-April24/IMG_1461.JPEG",
+    "images/memories/mem-April24/IMG_1462.JPEG",
+    "images/memories/mem-April24/IMG_1463.JPEG",
+    "images/memories/mem-April24/IMG_1464.JPEG",
+    "images/memories/mem-April24/IMG_1465.JPEG",
+    "images/memories/mem-April24/IMG_1466.JPEG",
+    "images/memories/mem-April24/IMG_1467.JPEG",
+    "images/memories/mem-April24/IMG_1468.JPEG",
+    "images/memories/mem-April24/IMG_1469.MP4"
 
                    ]
     },
     {
         "id":  "card-023",
-        "title":  "",
+        "priority":  28,
+        "title":  "Airport Parking Ticket",
         "date":  null,
-        "description":  "",
+        "description":  "I think this is the thing the printer spits out when I go to park at the ariport. The reason I have this is when I went to pick you up the night you came back from Tennesse, I got lost and ended up going into a parking lot by accident. That was a hectic drive, I had to figure out how to get to arrivals on my own at night. It only took me like 4 loops around the entire airport but I got it eventually! Its a good thing I got their super early just in case somethign liek this happened. I am so good at planning ahead sometimes, nice",
         "front":  "images/cards/card-023-1-front.JPEG",
         "back":  null,
         "photos":  [
-            "images/memories/mem-airport/IMG_1915.JPEG"
+            "images/memories/mem-airport/IMG_1915.JPEG",
+            "images/memories/mem-April24/IMG_1460.JPEG",
+    "images/memories/mem-April24/IMG_1461.JPEG",
+    "images/memories/mem-April24/IMG_1462.JPEG",
+    "images/memories/mem-April24/IMG_1463.JPEG",
+    "images/memories/mem-April24/IMG_1464.JPEG",
+    "images/memories/mem-April24/IMG_1465.JPEG",
+    "images/memories/mem-April24/IMG_1466.JPEG",
+    "images/memories/mem-April24/IMG_1467.JPEG",
+    "images/memories/mem-April24/IMG_1468.JPEG",
+    "images/memories/mem-April24/IMG_1469.MP4"
 
                    ]
     },
     {
         "id":  "card-024",
-        "title":  "",
+        "priority" :  14,
+        "title":  "Hornets Game!",
         "date":  null,
-        "description":  "",
+        "description":  "What fun date! I loved loved loved watching the game with you and what a great game it was too. Remember that cool checkout thing where you would just tap your card at the start grab your stuff then leave, spooky. I know those tickets were super expensive I am so greatful you got them for us I really enjoyed that. If we can find cheap tickets I would love to go to another game with you. Looks like we got Texas Roadhouse that night too, nice.",
         "front":  "images/cards/card-024-1-front.JPEG",
         "back":  null,
         "photos":  [
@@ -356,22 +501,13 @@
 
                    ]
     },
-    {
-        "id":  "card-025",
-        "title":  "",
-        "date":  null,
-        "description":  "",
-        "front":  "images/cards/card-025-1-front.JPEG",
-        "back":  null,
-        "photos":  [
-
-                   ]
-    },
+    
     {
         "id":  "card-026",
-        "title":  "",
+        "priority":  21,
+        "title":  "Church Card",
         "date":  null,
-        "description":  "",
+        "description":  "Boy you stupid, no I not ---",
         "front":  "images/cards/card-026-1-front.JPEG",
         "back":  null,
         "photos":  [
@@ -380,21 +516,33 @@
     },
     {
         "id":  "card-027",
-        "title":  "",
+        "priority":  30,
+        "title":  "Baggage Charge Reciept",
         "date":  null,
-        "description":  "",
+        "description":  "Again I dont know why I have this but its from when we went to the airport to pick you up from Tennesse. These pictures of Chopper in my car are all I have from that day.",
         "front":  "images/cards/card-027-1-front.JPEG",
         "back":  null,
         "photos":  [
-            "images/memories/mem-airport/IMG_1915.JPEG"
+            "images/memories/mem-airport/IMG_1915.JPEG",
+            "images/memories/mem-April24/IMG_1460.JPEG",
+    "images/memories/mem-April24/IMG_1461.JPEG",
+    "images/memories/mem-April24/IMG_1462.JPEG",
+    "images/memories/mem-April24/IMG_1463.JPEG",
+    "images/memories/mem-April24/IMG_1464.JPEG",
+    "images/memories/mem-April24/IMG_1465.JPEG",
+    "images/memories/mem-April24/IMG_1466.JPEG",
+    "images/memories/mem-April24/IMG_1467.JPEG",
+    "images/memories/mem-April24/IMG_1468.JPEG",
+    "images/memories/mem-April24/IMG_1469.MP4"
 
                    ]
     },
     {
         "id":  "card-028",
-        "title":  "",
+        "priority":  10,
+        "title":  "Artwork from UNCC 3 ",
         "date":  null,
-        "description":  "",
+        "description":  "This is another knick knack that yo ucrafted up during art class. I'll be hoenst I have no idea what this is suppoesed to be. All I know is that you gave it to me so I have taken good care of it.",
         "front":  "images/cards/card-028-1-front.JPEG",
         "back":  null,
         "photos":  [
@@ -404,9 +552,10 @@
     },
     {
         "id":  "card-029",
-        "title":  "",
+        "priority":  27,
+        "title":  "Hawaii Magnet",
         "date":  null,
-        "description":  "",
+        "description":  "This is a nice little magnet yo ugot me from Hawaii. I like it a lot its very colorful and bright. I would put it on the fridge but I didnt for some reason.",
         "front":  "images/cards/card-029-1-front.JPEG",
         "back":  null,
         "photos":  [
@@ -415,7 +564,8 @@
     },
     {
         "id":  "card-030",
-        "title":  "",
+        "priority":  15,
+        "title":  "Basketball Medal",
         "date":  null,
         "description":  "This is the medal I won in the basketball tournament that you came and watched! You looked so good that day I coudln't keep my eyes off you in between plays. I hope you can come to more events like that, its puts the pressure on me to perform well, but its worth it to see you cheering me on.",
         "front":  "images/cards/card-030-1-front.JPEG",
@@ -429,44 +579,65 @@
         "priority":  2,
         "title":  "Second Anniversary Card",
         "date":  null,
-        "description":  "CHARLOTTE KNIGHTS! I appreciate your kind words in this card. I agree that we both grew a ton during that period of our lives. Baseball games make for the best date nights. One of my favorite memories with you is going to a game with the giant JBL speaker in the back seat of my car, playing bad bunny while we ride through downtown.",
+        "description":  "CHARLOTTE KNIGHTS! I appreciate your kind words in this card. I agree that we both grew a ton during that period of our lives. Baseball games make for the best date nights. One of my favorite memories with you is going to a game with the giant JBL speaker in the back seat of my car, playing bad bunny while we ride through downtown. For this anniversary you were in Texas, thats what the facetime photo is from. So we celebrated June 29th the airport. You also got me tickets for the knights game for July so we had two dates for our second anniversary! I also inclduded a bunch of pictures from the day we wen to the knights game with your family.",
         "front":  "images/cards/card-031-1-front.JPEG",
         "back":  null,
         "photos":  [
-        "images/memories/mem-knights/71150759328__5AA5D5BF-90F3-40EA-B019-CA077828714C.JPEG",
-    "images/memories/mem-knights/IMG_0445.JPEG",
-    "images/memories/mem-knights/IMG_0446.JPEG",
-    "images/memories/mem-knights/IMG_0452.JPEG",
-    "images/memories/mem-knights/IMG_1767.JPEG",
-    "images/memories/mem-knights/IMG_1768.JPEG",
-    "images/memories/mem-knights/IMG_1769.JPEG",
-    "images/memories/mem-knights/IMG_1770.JPEG",
-    "images/memories/mem-knights/IMG_1771.JPEG",
-    "images/memories/mem-knights/IMG_1772.JPEG",
-    "images/memories/mem-knights/IMG_1776.JPG",
-    "images/memories/mem-knights/IMG_1777.JPG",
-    "images/memories/mem-knights/IMG_6787.JPEG",
-    "images/memories/mem-knights/IMG_6788.JPEG",
-    "images/memories/mem-knights/IMG_6789.JPEG",
-    "images/memories/mem-knights/IMG_6790.JPEG",
-    "images/memories/mem-knights/IMG_6791.JPEG",
-    "images/memories/mem-knights/IMG_6792.JPEG",
-    "images/memories/mem-knights/IMG_6793.JPEG",
-    "images/memories/mem-knights/IMG_6794.JPEG",
-    "images/memories/mem-knights/IMG_6795.JPEG"
+        
+    "images/memories/mem-anniversary2/IMG_6658.JPEG",
+    "images/memories/mem-anniversary2/IMG_6659.JPEG",
+    "images/memories/mem-anniversary2/IMG_6660.JPEG",
+    "images/memories/mem-anniversary2/IMG_6662.JPG",
+    "images/memories/mem-anniversary2/IMG_6664.JPEG",
+    "images/memories/mem-anniversary2/IMG_6668.JPEG",
+    "images/memories/mem-anniversary2/IMG_6672.JPEG",
+    "images/memories/mem-anniversary2/IMG_6675.JPEG",
+    "images/memories/mem-anniversary2/IMG_6682.JPEG",
+    "images/memories/mem-anniversary2/IMG_6683.JPEG",
+    "images/memories/mem-anniversary2/IMG_6686.JPEG",
+    "images/memories/mem-anniversary2/IMG_6687.JPEG",
+    "images/memories/mem-anniversary2/IMG_6688.JPEG",
+    "images/memories/mem-anniversary2/IMG_6690.JPEG",
+    "images/memories/mem-anniversary2/IMG_6691.JPEG",
+    "images/memories/mem-anniversary2/IMG_6787.JPEG",
+    "images/memories/mem-anniversary2/IMG_6788.JPEG",
+    "images/memories/mem-anniversary2/IMG_6789.JPEG",
+    "images/memories/mem-anniversary2/IMG_6790.JPEG",
+    "images/memories/mem-anniversary2/IMG_6791.JPEG",
+    "images/memories/mem-anniversary2/IMG_6792.JPEG",
+    "images/memories/mem-anniversary2/IMG_6793.JPEG",
+    "images/memories/mem-anniversary2/IMG_6794.JPEG",
+    "images/memories/mem-anniversary2/IMG_6795.JPEG",
+    "images/memories/mem-anniversary2/lp_image.JPEG","images/memories/mem-anniversary2/71150759328__5AA5D5BF-90F3-40EA-B019-CA077828714C.JPEG",
+    "images/memories/mem-anniversary2/IMG_0445.JPEG",
+    "images/memories/mem-anniversary2/IMG_0446.JPEG",
+    "images/memories/mem-anniversary2/IMG_0452.JPEG",
+    "images/memories/mem-anniversary2/IMG_1767.JPEG",
+    "images/memories/mem-anniversary2/IMG_1768.JPEG",
+    "images/memories/mem-anniversary2/IMG_1769.JPEG",
+    "images/memories/mem-anniversary2/IMG_1770.JPEG",
+    "images/memories/mem-anniversary2/IMG_1771.JPEG",
+    "images/memories/mem-anniversary2/IMG_1772.JPEG",
+    "images/memories/mem-anniversary2/IMG_1776.JPG",
+    "images/memories/mem-anniversary2/IMG_1777.JPG"
 
                    ]
         
     },
     {
         "id":  "card-032",
-        "title":  "",
+        "priority":  2,
+        "title":  "Third Anniversary",
         "date":  null,
-        "description":  "",
+        "description":  "Our most recent anniversary! I didnt have another picture to represent our anniversary so I used this one instead. You looked stunning this day. RH was a great choice because it was beautiful and the food was very good. Only downide was the price. Man I seriously cannot ge tover how good you looked. I am so lucky to have you.",
         "front":  "images/cards/card-032-1-front.JPEG",
         "back":  null,
         "photos":  [
-
+        "images/memories/mem-anniversary3/IMG_1761.JPEG",
+    "images/memories/mem-anniversary3/IMG_1764.JPEG",
+    "images/memories/mem-anniversary3/IMG_1766.JPEG",
+    "images/memories/mem-anniversary3/IMG_3132.JPEG",
+    "images/memories/mem-anniversary3/IMG_3132.MOV"
                    ]
     },
     {

@@ -22,6 +22,7 @@ html, body {
     linear-gradient(to bottom, var(--bg2), var(--bg));
   color: var(--text);
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  scroll-behavior: smooth;
 }
 
 
@@ -199,6 +200,24 @@ box-shadow: var(--shadow);
 border: 1px solid var(--stroke);
   cursor: pointer;
   position: relative;
+  transition: transform 280ms ease, box-shadow 280ms ease;
+  animation: fadeIn 600ms ease-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .card::after {
@@ -272,11 +291,19 @@ border: 1px solid var(--stroke);
 }
 
 .swiper-pagination-bullet {
-  background: rgba(255,255,255,0.35);
+  background: rgba(155, 43, 67, 0.3);
   opacity: 1;
+  width: 10px;
+  height: 10px;
+  transition: all 220ms ease;
+}
+.swiper-pagination-bullet:hover {
+  background: rgba(155, 43, 67, 0.5);
 }
 .swiper-pagination-bullet-active {
-  background: var(--outline);
+  background: rgba(155, 43, 67, 0.9);
+  width: 28px;
+  border-radius: 6px;
 }
 
 /* Modal */
@@ -455,9 +482,15 @@ border: 1px solid var(--stroke);
   padding: 14px;
   border-radius: 18px;
   background: rgba(255,255,255,0.58);
-  border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: 0 18px 45px rgba(0,0,0,0.14);
+  border: 1px solid rgba(155, 43, 67, 0.15);
+  box-shadow: 0 18px 45px rgba(155, 43, 67, 0.08), inset 0 1px 2px rgba(255,255,255,0.4);
   backdrop-filter: blur(12px);
+  transition: all 280ms ease;
+}
+
+.controls:hover {
+  border-color: rgba(155, 43, 67, 0.25);
+  box-shadow: 0 22px 55px rgba(155, 43, 67, 0.12), inset 0 1px 2px rgba(255,255,255,0.4);
 }
 
 /* Stronger inputs so they don’t disappear */
@@ -611,16 +644,26 @@ border: 1px solid var(--stroke);
 
 /* flower button (kept) */
 .flower-btn{
-  margin-top: 18px;
-  height: 44px;
-  border-radius: 14px;
-  border: 1px solid rgba(0,0,0,0.08);
-  background: rgba(255,255,255,0.92);
-  color: rgba(43,43,43,0.90);
+  margin-top: 34px;
+  margin-bottom: 22px;
+  height: 52px;
+  padding: 0 28px;
+  border-radius: 16px;
+  border: 2px solid rgba(155, 43, 67, 0.3);
+  background: linear-gradient(135deg, rgba(255, 200, 220, 0.8), rgba(255, 220, 235, 0.8));
+  color: rgba(155, 43, 67, 0.95);
   cursor: pointer;
-  padding: 0 16px;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 12px 30px rgba(155, 43, 67, 0.15);
+  transition: all 220ms ease;
 }
-.flower-btn:hover{ border-color: rgba(155,43,67,0.28); }
+.flower-btn:hover{
+  background: linear-gradient(135deg, rgba(255, 180, 210, 0.9), rgba(255, 210, 230, 0.9));
+  border-color: rgba(155, 43, 67, 0.5);
+  box-shadow: 0 16px 40px rgba(155, 43, 67, 0.25);
+  transform: translateY(-2px);
+}
 .flower-btn:active{ transform: translateY(1px); }
 
 /* flower burst */
@@ -706,8 +749,8 @@ border: 1px solid var(--stroke);
 .letter-text{
   margin: 0;
   font-size: 13px;
-  line-height: 1.45;
-  color: rgba(43,43,43,0.78);
+  line-height: 1.55;
+  color: rgba(8, 8, 8, 0.88);
 }
 
 .letter-cta{
@@ -1075,7 +1118,37 @@ border: 1px solid var(--stroke);
 ====================================================== */
 
 /* ======================================================
-   CLICK-OPEN OVERRIDES END
+   FOOTER BEGIN
+====================================================== */
+.site-footer {
+  margin-top: 52px;
+  padding: 32px 18px;
+  text-align: center;
+  border-top: 1px solid rgba(155, 43, 67, 0.15);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(155, 43, 67, 0.75);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.site-footer .heart {
+  display: inline-block;
+  animation: heartBeat 1.2s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.1); }
+  50% { transform: scale(1); }
+}
+
+/* ======================================================
+   FOOTER END
 ====================================================== */
 
 

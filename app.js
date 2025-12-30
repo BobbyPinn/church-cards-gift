@@ -185,7 +185,8 @@ function openModal(card) {
     const img = document.createElement("img");
     img.src = src;
     img.alt = "Photo";
-    img.addEventListener("click", () => window.open(src, "_blank"));
+    img.style.cursor = "pointer";
+    img.addEventListener("click", () => openLightbox(src));
     modalGallery.appendChild(img);
   }
 });
@@ -198,6 +199,34 @@ function openModal(card) {
 function closeModal() {
   overlay.classList.remove("open");
 }
+
+// Lightbox for gallery images
+const lightboxOverlay = document.getElementById("lightboxOverlay");
+const lightboxImg = document.getElementById("lightboxImg");
+const lightboxClose = document.getElementById("lightboxClose");
+
+function openLightbox(src) {
+  if (!lightboxOverlay || !lightboxImg) return;
+  lightboxImg.src = src;
+  lightboxOverlay.classList.add("open");
+}
+
+function closeLightbox() {
+  if (lightboxOverlay) lightboxOverlay.classList.remove("open");
+}
+
+if (lightboxClose) {
+  lightboxClose.addEventListener("click", closeLightbox);
+}
+if (lightboxOverlay) {
+  lightboxOverlay.addEventListener("click", (e) => {
+    if (e.target === lightboxOverlay) closeLightbox();
+  });
+}
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeLightbox();
+});
+
 // -------- Love timer + flowers --------
 const HEARTS = ["💗","💖","💞","💕","❤️","🤍"];
 const FLOWERS = ["🌸","🌷","🌹","💐","🌺","🌼","🌻","💖"];

@@ -86,7 +86,7 @@ html, body {
 ====================================================== */
 /* ======================================================
    MEMORIES HEADER BACKGROUND UPGRADE BEGIN
-   Paste Location: inside your MEMORIES HEADER section
+
 ====================================================== */
 
 .memories-header{
@@ -447,7 +447,7 @@ border: 1px solid var(--stroke);
 
 /* ======================================================
    CONTROLS POP UPGRADE BEGIN
-   Paste Location: RIGHT AFTER your existing .stats { ... }
+
 ====================================================== */
 
 /* Give the whole controls area a glass panel feel */
@@ -666,11 +666,9 @@ border: 1px solid var(--stroke);
 
 /* ======================================================
    INTRO ENVELOPE OVERLAY BEGIN
-   Paste Location: styles.css under "Intro Envelope Overlay" comment
 ====================================================== */
 /* ======================================================
    LETTER NOTE STYLES BEGIN
-   Paste Location: under your Intro Envelope Overlay CSS
 ====================================================== */
 /*
   Letter / Envelope overview (quick guide):
@@ -913,7 +911,6 @@ border: 1px solid var(--stroke);
 
 /* ======================================================
    CLICK-OPEN OVERRIDES BEGIN
-   Paste Location: VERY BOTTOM of your Intro Envelope Overlay CSS
 ====================================================== */
 
 /*
@@ -956,7 +953,6 @@ border: 1px solid var(--stroke);
 }
 /* ======================================================
    LETTER EXPANDS LIKE A REAL LETTER BEGIN
-   Paste Location: END of Intro Envelope Overlay CSS
 ====================================================== */
 
 /* default: letter sits inside envelope */
@@ -984,7 +980,6 @@ border: 1px solid var(--stroke);
 
 /* ======================================================
    CENTER OPEN LETTER BEGIN
-   Paste Location: inside your "LETTER EXPANDS..." section
 ====================================================== */
 
 .intro-overlay.is-open .letter {

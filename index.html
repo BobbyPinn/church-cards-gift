@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Sundays</title>
 
-    <!-- Swiper carousel library -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -14,38 +13,135 @@
   </head>
 
   <body>
-    <header class="topbar">
-      <div class="wrap">
-        <div class="brand-title">Our Sundays</div>
-        <div class="brand-subtitle">Scroll through cards + little moments.</div>
-      </div>
-    </header>
 
+    <!-- ======================================================
+     INTRO ENVELOPE OVERLAY BEGIN
+     Paste Location: index.html, right after <body>
+====================================================== -->
+<div class="intro-overlay" id="introOverlay" aria-label="Intro envelope overlay">
+  <div class="intro-stage">
+    <div class="intro-title">A little note for you</div>
+    <div class="intro-sub">Hover the envelope, then click to open 💌</div>
+
+    <!-- Envelope animation (YOUR HTML) -->
+    <div class="wrapper" id="envBtn" role="button" tabindex="0" aria-label="Open envelope">
+      <div class="lid one"></div>
+      <div class="lid two"></div>
+      <div class="envelope"></div>
+      <!-- ======================================================
+     LETTER CONTENT BEGIN
+====================================================== -->
+<div class="letter">
+  <div class="letter-inner">
+    <h3 class="letter-title">Hi love,</h3>
+    <p class="letter-text">
+ Over time, I’ve collected small things that meant something to me—little pieces I couldn’t bring myself to throw away. A while back, I realized that one day I could turn them into a gift somehow. I found a place for the prom flowers in the scrapbook, but I never knew what to do with the other random cards and pieces of paper you wrote little notes on. I just knew I had to keep them.
+A few days before Christmas, the idea finally hit me: why not immortalize these things by putting them on a website? I’ve wanted to learn how to make a website for the longest time, but I never had a meaningful idea for it—until now. I hope you like it.
+I know there are so many little notes and reminders of you that have been lost along the way, but these are the ones that stood the test of time. I love you to the moon and back.
+.
+    </p>
+    <div class="letter-cta">Click again to enter</div>
+  </div>
+</div>
+<!-- ======================================================
+     LETTER CONTENT END
+====================================================== -->
+
+    </div>
+
+   
+  </div>
+</div>
+<!-- ======================================================
+     INTRO ENVELOPE OVERLAY END
+====================================================== -->
+
+
+
+    <!-- MAIN SITE -->
     <main class="wrap">
-      <section class="hero">
-  <h1>Church Cards</h1>
-  <p>Tap a card to see Side 1 / Side 2 and any photos from that day.</p>
+      <section class="hero hero-center">
+        <h1 class="big-name">Kylie Heart</h1>
+        <p class="subtitle">Tap a card to see Side 1 / Side 2 and any photos from that day.</p>
 
-  <div class="controls">
-    <input id="searchInput" type="text" placeholder="Search (Valentine, anniversary, card-014...)" />
-    <select id="filterSelect">
-      <option value="all">All</option>
-      <option value="hasBack">Has back side</option>
-      <option value="singles">Singles only</option>
-      <option value="hasPhotos">Has photos</option>
-      <option value="hasMemories">Has shared memory</option>
-    </select>
-    <button id="clearBtn" type="button">Clear</button>
+        <section class="time-wrap">
+          <div class="time-card">
+            <h2 class="time-title">Time Together</h2>
+            <div class="time-sub">We've been together for</div>
+
+            <div class="time-grid time-grid--top">
+              <div class="time-box time-box--big">
+                <div class="time-num" id="tYears">00</div>
+                <div class="time-label">YEARS</div>
+              </div>
+              <div class="time-box time-box--big">
+                <div class="time-num" id="tMonths">00</div>
+                <div class="time-label">MONTHS</div>
+              </div>
+              <div class="time-box time-box--big">
+                <div class="time-num" id="tDays">00</div>
+                <div class="time-label">DAYS</div>
+              </div>
+            </div>
+
+            <div class="time-grid time-grid--bottom">
+              <div class="time-box time-box--small">
+                <div class="time-num time-num--sm" id="tHours">00</div>
+                <div class="time-label">HOURS</div>
+              </div>
+              <div class="time-box time-box--small">
+                <div class="time-num time-num--sm" id="tMinutes">00</div>
+                <div class="time-label">MINUTES</div>
+              </div>
+              <div class="time-box time-box--small">
+                <div class="time-num time-num--sm" id="tSeconds">00</div>
+                <div class="time-label">SECONDS</div>
+              </div>
+            </div>
+
+            <button class="flower-btn" id="flowerBtn" type="button">Tap me for flowers! 🌸</button>
+          </div>
+        </section>
+<div class="controls-panel"></div>
+        <div class="controls">
+          <input id="searchInput" type="text" placeholder="Search (Valentine, anniversary, card-014...)" />
+          <select id="filterSelect">
+            <option value="all">All</option>
+            <option value="hasBack">Has back side</option>
+            <option value="singles">Singles only</option>
+            <option value="hasPhotos">Has photos</option>
+            <option value="hasMemories">Has shared memory</option>
+          </select>
+          <button id="clearBtn" type="button">Clear</button>
+        </div>
+
+        <div class="stats" id="stats"></div>
+      </section>
+      </div>
+
+      <!-- ======================================================
+     MEMORIES HEADER BEGIN
+====================================================== -->
+<section class="memories-header" aria-label="Memories header">
+  <div class="memories-title-row">
+    <h2 class="memories-title">Memories</h2>
+    <span id="memoriesCount" class="memories-count">Showing all</span>
   </div>
 
-  <div class="stats" id="stats"></div>
+  <p class="memories-subtitle">
+    Tap a card to flip it. If it has a gallery, you’ll see photos from that time.
+  </p>
+
+  <div class="memories-divider"></div>
 </section>
+<!-- ======================================================
+     MEMORIES HEADER END
+====================================================== -->
 
 
       <section class="carousel">
         <div class="swiper">
           <div class="swiper-wrapper" id="swiperWrapper"></div>
-
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
           <div class="swiper-pagination"></div>
@@ -85,7 +181,6 @@
       </div>
     </div>
 
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
   </body>

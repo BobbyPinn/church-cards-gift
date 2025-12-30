@@ -198,6 +198,229 @@ function openModal(card) {
 function closeModal() {
   overlay.classList.remove("open");
 }
+// -------- Love timer + flowers --------
+const HEARTS = ["💗","💖","💞","💕","❤️","🤍"];
+const FLOWERS = ["🌸","🌷","🌹","💐","🌺","🌼","🌻","💖"];
+
+
+// Set your start date here (keep this line)
+const REL_START = new Date("2022-06-14T00:00:00"); // change this
+
+// Timer elements for the "Time Together" grid
+const elYears = document.getElementById("tYears");
+const elMonths = document.getElementById("tMonths");
+const elDays = document.getElementById("tDays");
+const elHours = document.getElementById("tHours");
+const elMinutes = document.getElementById("tMinutes");
+const elSeconds = document.getElementById("tSeconds");
+
+function pad2(n){ return String(n).padStart(2, "0"); }
+
+// Add months safely (handles month length differences)
+function addMonths(date, months) {
+  const d = new Date(date);
+  const day = d.getDate();
+  d.setDate(1);
+  d.setMonth(d.getMonth() + months);
+  const lastDay = new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate();
+  d.setDate(Math.min(day, lastDay));
+  return d;
+}
+function addYears(date, years) {
+  return addMonths(date, years * 12);
+}
+
+// Calendar-accurate diff: years/months/days then leftover h/m/s
+function calendarDiff(from, to) {
+  if (to < from) return { years:0, months:0, days:0, hours:0, minutes:0, seconds:0 };
+
+  let years = to.getFullYear() - from.getFullYear();
+  let cursor = addYears(from, years);
+  if (cursor > to) { years--; cursor = addYears(from, years); }
+
+  let months = (to.getFullYear() - cursor.getFullYear()) * 12 + (to.getMonth() - cursor.getMonth());
+  let cursor2 = addMonths(cursor, months);
+  if (cursor2 > to) { months--; cursor2 = addMonths(cursor, months); }
+
+  const remSec = Math.floor((to - cursor2) / 1000);
+  const days = Math.floor(remSec / 86400);
+  const hours = Math.floor((remSec % 86400) / 3600);
+  const minutes = Math.floor((remSec % 3600) / 60);
+  const seconds = remSec % 60;
+
+  return { years, months, days, hours, minutes, seconds };
+}
+
+function updateTimeTogether(){
+  // If you haven’t added the HTML yet, don’t crash
+  if (!elYears) return;
+
+  const now = new Date();
+  const d = calendarDiff(REL_START, now);
+
+  elYears.textContent = pad2(d.years);
+  elMonths.textContent = pad2(d.months);
+  elDays.textContent = pad2(d.days);
+  elHours.textContent = pad2(d.hours);
+  elMinutes.textContent = pad2(d.minutes);
+  elSeconds.textContent = pad2(d.seconds);
+}
+
+setInterval(updateTimeTogether, 1000);
+updateTimeTogether();
+
+
+function burstFlowers(x, y, count = 18) {
+  const gravity = 1800;      // px/s^2 (bigger = falls faster)
+  const drag = 0.985;        // air resistance (closer to 1 = less drag)
+  const minLife = 900;       // ms
+  const maxLife = 1600;      // ms
+
+  for (let i = 0; i < count; i++) {
+    const el = document.createElement("div");
+    el.className = "flower-pop";
+    el.textContent = FLOWERS[Math.floor(Math.random() * FLOWERS.length)];
+    document.body.appendChild(el);
+
+    // Randomize size/rotation
+    const size = 14 + Math.random() * 18;
+    el.style.fontSize = `${size}px`;
+
+    // Start position
+    let px = x;
+    let py = y;
+
+    // Initial velocity: "shoot out" fast in random direction
+    // angle bias upward a bit, but still spread wide
+    const angle = (-Math.PI / 2) + (Math.random() - 0.5) * (Math.PI * 0.9);
+    const speed = 700 + Math.random() * 700; // initial burst speed (px/s)
+
+    let vx = Math.cos(angle) * speed + (Math.random() - 0.5) * 200; // extra chaos
+    let vy = Math.sin(angle) * speed - Math.random() * 200;         // more upward kick
+
+    // Spin
+    let rot = Math.random() * 360;
+    const spin = (Math.random() - 0.5) * 720; // deg/s
+
+    const life = minLife + Math.random() * (maxLife - minLife);
+    const start = performance.now();
+    let last = start;
+
+    // We'll fade out near the end
+    function tick(now) {
+      const dt = (now - last) / 1000; // seconds
+      last = now;
+
+      // physics
+      vy += gravity * dt;   // gravity pulls down
+      vx *= drag;           // air resistance
+      vy *= drag;
+
+      px += vx * dt;
+      py += vy * dt;
+
+      rot += spin * dt;
+
+      // progress + fade
+      const t = now - start;
+      const p = Math.min(1, t / life);
+      el.style.opacity = String(1 - p);
+
+      // apply transform (translate + rotate)
+      el.style.transform = `translate(${px}px, ${py}px) rotate(${rot}deg)`;
+
+      // remove when done
+      if (p < 1) {
+        requestAnimationFrame(tick);
+      } else {
+        el.remove();
+      }
+    }
+
+    requestAnimationFrame(tick);
+  }
+}
+
+document.getElementById("flowerBtn")?.addEventListener("click", (e) => {
+  const r = e.currentTarget.getBoundingClientRect();
+  const x = r.left + r.width / 2;
+  const y = r.top + r.height / 2;
+  //flower amount
+  burstFlowers(x, y, 100);
+});
+
+let fallingEnabled = true;
+
+function spawnFallingHeart() {
+  if (!fallingEnabled) return;
+
+  const el = document.createElement("div");
+  el.className = "falling-flower";
+  el.textContent = HEARTS[Math.floor(Math.random() * HEARTS.length)];
+
+  const x = Math.random() * window.innerWidth;
+  const dur = 6 + Math.random() * 5; // 6–11s
+
+  el.style.setProperty("--x", `${x}px`);
+  el.style.setProperty("--dur", `${dur}s`);
+
+  document.body.appendChild(el);
+  el.addEventListener("animationend", () => el.remove());
+}
+
+setInterval(spawnFallingHeart, 900);
+
+/* =========================
+   FUNCTION BEGIN: setupIntroEnvelope
+   Purpose: 1st click opens envelope + shows letter; 2nd click enters site.
+========================= */
+function setupIntroEnvelope() {
+  const overlayEl = document.getElementById("introOverlay");
+  const envBtnEl = document.getElementById("envBtn"); // your .wrapper
+  if (!overlayEl || !envBtnEl) return;
+
+  // Pause falling hearts while intro is visible
+  if (typeof fallingEnabled !== "undefined") fallingEnabled = false;
+
+  let step = 0; // 0 = closed, 1 = letter shown
+
+  function enterSite() {
+    overlayEl.classList.add("is-hidden");
+    if (typeof fallingEnabled !== "undefined") fallingEnabled = true;
+  }
+
+  function openEnvelope() {
+    overlayEl.classList.add("is-open");
+    step = 1;
+  }
+
+  function handleActivate() {
+    if (step === 0) {
+      openEnvelope();
+    } else {
+      enterSite();
+    }
+  }
+
+  // Click
+  envBtnEl.addEventListener("click", handleActivate);
+
+  // Keyboard: Enter / Space
+  envBtnEl.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      handleActivate();
+    }
+  });
+}
+/* =========================
+   FUNCTION END: setupIntroEnvelope
+========================= */
+
+
+
+
+
 
 async function init() {
   // Load JSON
@@ -256,4 +479,9 @@ clearBtn.addEventListener("click", () => {
   applySearchAndFilter();
 });
 
+
+setupIntroEnvelope();
+
 init();
+
+

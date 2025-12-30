@@ -1,24 +1,29 @@
 :root {
-  --bg: #0b0b10;
-  --card: rgba(255, 255, 255, 0.06);
-  --card-strong: rgba(255, 255, 255, 0.10);
-  --text: rgba(255, 255, 255, 0.92);
-  --muted: rgba(255, 255, 255, 0.65);
-  --outline: #ff8a2a;
-  --shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
+  --bg: #f6e6ea;                 /* light pink base */
+  --bg2: #f7e9ed;                /* slight variation for gradients */
+  --card: rgba(255, 255, 255, 0.78);
+  --card-strong: rgba(255, 255, 255, 0.92);
+  --text: rgba(43, 43, 43, 0.92);
+  --muted: rgba(43, 43, 43, 0.62);
+  --outline: #e67e22;            /* keep your orange accent */
+  --shadow: 0 18px 60px rgba(0, 0, 0, 0.18);
+  --stroke: rgba(0, 0, 0, 0.08);
 }
+
 
 * { box-sizing: border-box; }
 
 html, body {
   margin: 0;
   padding: 0;
-  background: radial-gradient(1200px 600px at 30% 0%, rgba(255, 138, 42, 0.12), transparent 55%),
-              radial-gradient(900px 500px at 80% 20%, rgba(120, 200, 255, 0.10), transparent 55%),
-              var(--bg);
+  background:
+    radial-gradient(1200px 600px at 30% 0%, rgba(255, 255, 255, 0.65), transparent 58%),
+    radial-gradient(900px 500px at 80% 10%, rgba(255, 255, 255, 0.45), transparent 60%),
+    linear-gradient(to bottom, var(--bg2), var(--bg));
   color: var(--text);
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
 }
+
 
 .topbar {
   padding: 22px 18px 8px;
@@ -42,11 +47,32 @@ html, body {
   padding: 8px 18px 42px;
 }
 
+
 .hero h1 {
   margin: 12px 0 6px;
-  font-size: 34px;
+  
   letter-spacing: -0.7px;
 }
+
+.hero-center{
+  text-align: center;
+}
+
+.big-name{
+  margin: 18px 0 8px;
+  font-size: clamp(52px, 8vw, 110px);
+  font-weight: 900;
+  letter-spacing: -1.2px;
+  color: #9b2b43; /* matches the screenshot vibe */
+}
+
+.subtitle{
+  margin: 0 auto;
+  max-width: 760px;
+  color: rgba(43,43,43,0.65);
+  line-height: 1.5;
+}
+
 
 .hero p {
   margin: 0;
@@ -54,6 +80,95 @@ html, body {
   max-width: 760px;
   line-height: 1.5;
 }
+
+/* ======================================================
+   MEMORIES HEADER BEGIN
+====================================================== */
+/* ======================================================
+   MEMORIES HEADER BACKGROUND UPGRADE BEGIN
+   Paste Location: inside your MEMORIES HEADER section
+====================================================== */
+
+.memories-header{
+  width: min(980px, 92vw);
+  margin: 16px auto 14px;
+  text-align: left;
+
+  /* NEW: background card */
+  padding: 16px 16px 14px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.58);
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+  backdrop-filter: blur(12px);
+}
+
+/* slightly stronger divider inside the card */
+.memories-divider{
+  height: 1px;
+  margin-top: 12px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(60, 20, 30, 0.22),
+    transparent
+  );
+}
+
+/* optional: tighten spacing so it looks intentional */
+.memories-subtitle{
+  margin: 6px 0 0;
+}
+
+/* ======================================================
+   MEMORIES HEADER BACKGROUND UPGRADE END
+====================================================== */
+
+
+.memories-title-row{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.memories-title{
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+  color: rgba(60, 20, 30, 0.92);
+}
+
+.memories-count{
+  font-size: 13px;
+  color: rgba(60, 20, 30, 0.55);
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: 6px 10px;
+  border-radius: 999px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.06);
+}
+
+.memories-subtitle{
+  margin: 8px 0 12px;
+  font-size: 14px;
+  color: rgba(60, 20, 30, 0.55);
+  line-height: 1.35;
+}
+
+.memories-divider{
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(60, 20, 30, 0.18),
+    transparent
+  );
+}
+/* ======================================================
+   MEMORIES HEADER END
+====================================================== */
+
 
 .carousel {
   margin-top: 22px;
@@ -80,8 +195,8 @@ html, body {
   border-radius: 18px;
   overflow: hidden;
   background: var(--card);
-  box-shadow: var(--shadow);
-  border: 2px solid transparent;
+box-shadow: var(--shadow);
+border: 1px solid var(--stroke);
   cursor: pointer;
   position: relative;
 }
@@ -90,9 +205,10 @@ html, body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.45), rgba(0,0,0,0));
+  background: linear-gradient(to top, rgba(0,0,0,0.18), rgba(0,0,0,0));
   pointer-events: none;
 }
+
 
 .card img {
   width: 100%;
@@ -112,7 +228,7 @@ html, body {
 
 .card-date {
   font-size: 12px;
-  color: rgba(255,255,255,0.78);
+  color: rgba(43,43,43,0.70);
 }
 
 .card-title {
@@ -124,20 +240,35 @@ html, body {
 .card-desc {
   margin-top: 4px;
   font-size: 12px;
-  color: rgba(255,255,255,0.72);
+  color: rgba(43,43,43,0.62);
   line-height: 1.35;
 }
 
 /* Active slide orange outline */
 .swiper-slide-active .card {
-  border-color: var(--outline);
+  border-color: rgba(230, 126, 34, 0.55);
   background: var(--card-strong);
 }
+
 
 /* Swiper buttons */
 .swiper-button-prev,
 .swiper-button-next {
-  color: rgba(255,255,255,0.78);
+  /* Make arrows pop on dark photos */
+  color: #fff;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.42);
+  border: 1px solid rgba(255,255,255,0.35);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.25);
+  backdrop-filter: blur(6px);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.55);
 }
 
 .swiper-pagination-bullet {
@@ -168,12 +299,13 @@ html, body {
   width: min(980px, 100%);
   max-height: 92vh;
   overflow: auto;
-  background: rgba(20, 20, 28, 0.92);
-  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--stroke);
   border-radius: 22px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.28);
   position: relative;
 }
+
 
 .modal-close {
   position: sticky;
@@ -194,7 +326,7 @@ html, body {
 
 .modal-date {
   font-size: 13px;
-  color: rgba(255,255,255,0.70);
+  color: var(--muted);
 }
 
 .modal-title {
@@ -206,7 +338,7 @@ html, body {
 
 .modal-desc {
   margin-top: 6px;
-  color: rgba(255,255,255,0.74);
+  color: var(--muted);
   line-height: 1.45;
 }
 
@@ -285,26 +417,26 @@ html, body {
   border-radius: 14px;
   border: 1px solid rgba(255,255,255,0.14);
   background: rgba(255,255,255,0.06);
-  color: rgba(255,255,255,0.9);
+  color: rgba(43,43,43,0.92);
   padding: 0 12px;
   outline: none;
 }
 
 .controls input::placeholder {
-  color: rgba(255,255,255,0.45);
+  color: rgba(0, 0, 0, 0.45);
 }
 
 .controls button {
   height: 42px;
   border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.14);
+  border: 1px solid rgba(0, 0, 0, 0.14);
   background: rgba(255,255,255,0.08);
-  color: rgba(255,255,255,0.9);
+  color: rgba(0, 0, 0, 0.9);
   cursor: pointer;
 }
 
 .controls button:hover {
-  background: rgba(255,255,255,0.11);
+  background: rgba(0, 0, 0, 0.11);
 }
 
 .stats {
@@ -312,6 +444,69 @@ html, body {
   font-size: 13px;
   color: rgba(255,255,255,0.70);
 }
+
+/* ======================================================
+   CONTROLS POP UPGRADE BEGIN
+   Paste Location: RIGHT AFTER your existing .stats { ... }
+====================================================== */
+
+/* Give the whole controls area a glass panel feel */
+.controls{
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.58);
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.14);
+  backdrop-filter: blur(12px);
+}
+
+/* Stronger inputs so they don’t disappear */
+.controls input,
+.controls select{
+  background: rgba(255,255,255,0.88);
+  border: 1px solid rgba(0,0,0,0.10);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+  color: rgba(30,20,25,0.92);
+}
+
+/* Better placeholder contrast */
+.controls input::placeholder{
+  color: rgba(30,20,25,0.45);
+}
+
+/* Nice focus ring */
+.controls input:focus,
+.controls select:focus{
+  border-color: rgba(155,43,67,0.35);
+  box-shadow: 0 12px 32px rgba(155,43,67,0.18);
+}
+
+/* Make Clear button feel like a real action */
+.controls button{
+  background: rgba(155,43,67,0.14);
+  border: 1px solid rgba(155,43,67,0.20);
+  color: rgba(70,20,35,0.92);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.06);
+  font-weight: 700;
+}
+
+.controls button:hover{
+  background: rgba(155,43,67,0.20);
+  border-color: rgba(155,43,67,0.30);
+}
+
+/* FIX: stats text was white on a light bg, make it readable */
+.stats{
+  margin-top: 10px;
+  font-size: 13px;
+  color: rgba(30,20,25,0.62);
+  text-align: center;
+}
+
+/* ======================================================
+   CONTROLS POP UPGRADE END
+====================================================== */
+
 
 @media (max-width: 820px) {
   .controls {
@@ -326,5 +521,516 @@ html, body {
   border-radius: 14px;
   border: 1px solid rgba(255,255,255,0.10);
 }
+/* ---- Time Together block (pretty like your screenshot) ---- */
+.time-wrap{
+  margin-top: 22px;
+}
 
+.time-card{
+  background: rgba(255,255,255,0.88);
+  border-radius: 26px;
+  padding: 34px 22px 26px;
+  box-shadow: 0 18px 60px rgba(0,0,0,0.18);
+  border: 1px solid rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.time-title{
+  margin: 0;
+  font-size: 44px;
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -0.6px;
+  color: #9b2b43; /* deep rose */
+}
+
+.time-sub{
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(43,43,43,0.65);
+}
+
+.time-grid{
+  display: grid;
+  gap: 18px;
+  justify-content: center;
+}
+
+.time-grid--top{
+  margin-top: 26px;
+  grid-template-columns: repeat(3, 160px);
+}
+
+.time-grid--bottom{
+  margin-top: 22px;
+  grid-template-columns: repeat(3, 120px);
+}
+
+.time-box{
+  background: rgba(255,255,255,0.72);
+  border-radius: 18px;
+  padding: 18px 14px 14px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+.time-box::after{
+  content:"";
+  position:absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 10px;
+  height: 3px;
+  border-radius: 99px;
+  background: #9b2b43;
+  opacity: 0.95;
+}
+
+.time-num{
+  font-size: 54px;
+  font-weight: 900;
+  color: #9b2b43;
+  letter-spacing: 0.6px;
+}
+
+.time-num--sm{
+  font-size: 30px;
+  letter-spacing: 0.3px;
+}
+
+.time-label{
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  color: rgba(43,43,43,0.70);
+}
+
+/* flower button (kept) */
+.flower-btn{
+  margin-top: 18px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: rgba(255,255,255,0.92);
+  color: rgba(43,43,43,0.90);
+  cursor: pointer;
+  padding: 0 16px;
+}
+.flower-btn:hover{ border-color: rgba(155,43,67,0.28); }
+.flower-btn:active{ transform: translateY(1px); }
+
+/* flower burst */
+.flower-pop{
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 9999;
+  font-size: 20px;
+  will-change: transform, opacity;
+
+}
+@keyframes flowerBurst{
+  0%   { transform: translate(var(--x0), var(--y0)) scale(0.8); opacity: 1; }
+  100% { transform: translate(var(--x1), var(--y1)) scale(1.25); opacity: 0; }
+}
+
+/* falling flowers */
+.falling-flower{
+  position: fixed;
+  top: -40px;
+  left: 0;
+  pointer-events: none;
+  z-index: 5;
+  opacity: 0.9;
+  font-size: 18px;
+  animation: fallDown var(--dur) linear forwards;
+  transform: translateX(var(--x));
+}
+@keyframes fallDown{
+  0%   { transform: translateX(var(--x)) translateY(-40px) rotate(0deg); opacity: 0; }
+  10%  { opacity: 1; }
+  100% { transform: translateX(var(--x)) translateY(calc(100vh + 60px)) rotate(360deg); opacity: 0; }
+}
+
+@media (max-width: 820px){
+  .time-title{ font-size: 34px; }
+  .time-grid--top{ grid-template-columns: repeat(3, 120px); gap: 12px; }
+  .time-grid--bottom{ grid-template-columns: repeat(3, 100px); gap: 12px; }
+  .time-num{ font-size: 42px; }
+}
+
+/* ======================================================
+   INTRO ENVELOPE OVERLAY BEGIN
+   Paste Location: styles.css under "Intro Envelope Overlay" comment
+====================================================== */
+/* ======================================================
+   LETTER NOTE STYLES BEGIN
+   Paste Location: under your Intro Envelope Overlay CSS
+====================================================== */
+/*
+  Letter / Envelope overview (quick guide):
+  - Resting (closed): the letter sits inside the envelope using the
+    `.letter` selector (absolute positioning + translateY). Edit
+    `top` / `translateY(...)` here to nudge the letter up/down inside
+    the closed envelope.
+  - Hover: the `.wrapper:hover .letter` rule moves the letter upward
+    to make it peek out. Adjust the `translateY` value to increase/decrease
+    the rise on hover.
+  - Click / Overlay: `.intro-overlay .letter` and
+    `.intro-overlay.is-open .letter` override the defaults (often with
+    `!important`). These control how the letter behaves when the
+    overlay is shown or when the envelope is opened (centered/full view).
+  - Z-index: change `.letter` and `.envelope`/`.lid` z-index values to
+    control stacking (higher z-index shows on top).
+  - Inner spacing: `.letter-inner` controls padding inside the visible
+    letter (affects how text sits within the paper).
+  Use the comments near each selector below to find the exact lines to
+  change for the effect you want.
+*/
+
+.letter-inner{
+  padding: 16px 14px 12px;
+  text-align: center;
+}
+
+.letter-title{
+  margin: 2px 0 10px;
+  font-size: 16px;
+  font-weight: 900;
+  color: #9b2b43;
+}
+
+.letter-text{
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: rgba(43,43,43,0.78);
+}
+
+.letter-cta{
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 800;
+  color: rgba(155,43,67,0.80);
+}
+
+/*
+  Resting / Hidden state inside the envelope:
+  - `.wrapper .letter` defines how far the letter sits down inside the
+    envelope by default. This keeps the paper tucked away when the
+    envelope is closed. Increase the `translateY(...)` value to push the
+    letter further into the envelope, or decrease it to make it sit
+    closer to the top.
+  Example: `transform: translateX(-50%) translateY(52px);`
+*/
+.wrapper .letter{
+  transform: translateX(-50%) translateY(52px);
+  transition-delay: 0s;
+}
+
+/* On hover we keep your original behavior */
+.wrapper:hover .letter{
+  /* Gentle lift on hover: small rise only */
+  transform: translateX(-50%) translateY(-20px);
+  transition-delay: 0.5s;
+}
+
+/* On click-open state: force it open (even without hover) */
+.intro-overlay.is-open .lid.one{
+  transform: rotateX(90deg);
+  transition-delay: 0s;
+}
+.intro-overlay.is-open .lid.two{
+  transform: rotateX(180deg);
+  transition-delay: 0.25s;
+}
+.intro-overlay.is-open .letter{
+  transform: translateX(-50%) translateY(-50px);
+  transition-delay: 0.5s;
+}
+
+/* ======================================================
+   LETTER NOTE STYLES END
+====================================================== */
+
+
+.intro-overlay{
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: grid;
+  place-items: center;
+
+  background:
+    radial-gradient(1200px 600px at 30% 0%, rgba(255, 255, 255, 0.65), transparent 58%),
+    radial-gradient(900px 500px at 80% 10%, rgba(255, 255, 255, 0.45), transparent 60%),
+    linear-gradient(to bottom, var(--bg2), var(--bg));
+}
+
+.intro-overlay.is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 420ms ease, visibility 420ms ease;
+}
+
+.intro-stage{
+  text-align: center;
+  padding: 18px;
+}
+
+.intro-title{
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.4px;
+  color: #9b2b43;
+}
+
+.intro-sub{
+  margin-top: 8px;
+  font-size: 14px;
+  color: rgba(43,43,43,0.62);
+}
+
+/* Envelope (your structure) */
+.wrapper{
+  height: 200px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+  background: transparent;
+  margin: 16px auto 0;
+  cursor: pointer;
+
+  filter: drop-shadow(0 22px 50px rgba(0,0,0,0.20));
+  transition: transform 220ms ease;
+}
+.wrapper:hover{ transform: translateY(-2px) scale(1.02); }
+
+.lid{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-right: 150px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 150px solid transparent;
+  transform-origin: top;
+  transition: transform 0.25s linear;
+}
+
+/* Lid colors adjusted to white/pink theme */
+.lid.one{
+  border-top: 100px solid rgba(255,255,255,0.98);
+  transform: rotateX(0deg);
+  z-index: 3;
+  transition-delay: 0.75s;
+}
+
+.lid.two{
+  border-top: 100px solid rgba(245,245,245,0.98);
+  transform: rotateX(90deg);
+  z-index: 1;
+  transition-delay: 0.5s;
+}
+
+/* White envelope */
+.envelope{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  border-top: 100px solid transparent;
+  border-right: 150px solid rgba(255,255,255,0.92);
+  border-bottom: 100px solid rgba(255,255,255,0.92);
+  border-left: 150px solid rgba(252,242,246,0.96);
+
+  z-index: 3;
+  filter: drop-shadow(0 2px 0 rgba(0,0,0,0.06));
+}
+
+/* Letter */
+.letter {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%) translateY(40px); /* Changed from -80% to -50% */
+  width: 78%;
+  height: 78%;
+  background: rgba(255,255,255,0.98);
+  border-radius: 14px;
+  z-index: 2;
+  transition: transform 600ms cubic-bezier(.2,.9,.2,1),
+              width 600ms cubic-bezier(.2,.9,.2,1),
+              max-height 600ms cubic-bezier(.2,.9,.2,1),
+              border-radius 600ms cubic-bezier(.2,.9,.2,1);
+  overflow: hidden;
+}
+
+.letter p{
+  text-align: center;
+  font-size: 18px;
+  margin-top: 26px;
+  color: rgba(43,43,43,0.85);
+  padding: 0 12px;
+}
+
+/* Keep the original hover animation */
+.wrapper:hover .lid.one{
+  transform: rotateX(90deg);
+  transition-delay: 0s;
+}
+.wrapper:hover .lid.two{
+  transform: rotateX(180deg);
+  transition-delay: 0.25s;
+}
+.wrapper:hover .letter{
+  /* Gentle lift on hover: small rise only */
+  transform: translateX(-50%) translateY(-20px);
+  transition-delay: 0.5s;
+}
+
+/* Optional hint */
+.intro-hint{
+  margin-top: 12px;
+  font-size: 13px;
+  color: rgba(43,43,43,0.62);
+}
+
+@media (max-width: 420px){
+  .wrapper{ width: 280px; height: 190px; }
+}
+
+/* ======================================================
+   CLICK-OPEN OVERRIDES BEGIN
+   Paste Location: VERY BOTTOM of your Intro Envelope Overlay CSS
+====================================================== */
+
+/*
+  Overlay / Click-open overrides:
+  - `.intro-overlay .letter` forces a default state when the overlay is
+    visible (used when you present the envelope UI). It often uses
+    `!important` to override other transforms.
+  - `.intro-overlay.is-open .letter` is applied when the envelope is
+    opened (clicked). It typically moves the letter slightly upward and
+    raises its `z-index` so the paper appears above the envelope.
+  - If you want the letter to appear fully centered and expanded when
+    opened, edit the `.intro-overlay.is-open .letter` block lower in the
+    file (it sets `position: fixed; top:50%; left:50%; transform: translate(-50%,-50%)`).
+*/
+.intro-overlay .letter{
+  transform: translateX(-50%) translateY(0) !important;
+}
+
+/* When clicked open: flap opens + letter rises */
+.intro-overlay.is-open .lid.one{
+  transform: rotateX(90deg) !important;
+  transition-delay: 0s !important;
+}
+
+.intro-overlay.is-open .lid.two{
+  transform: rotateX(180deg) !important;
+  transition-delay: 0.25s !important;
+}
+
+/* Make sure the letter is visible above the envelope */
+.intro-overlay.is-open .letter{
+  transform: translateX(-50%) translateY(-10px) !important;
+  transition-delay: 0.5s !important;
+  z-index: 6 !important;
+}
+
+/* Keep envelope body below the letter */
+.intro-overlay .envelope{
+  z-index: 3 !important;
+}
+/* ======================================================
+   LETTER EXPANDS LIKE A REAL LETTER BEGIN
+   Paste Location: END of Intro Envelope Overlay CSS
+====================================================== */
+
+/* default: letter sits inside envelope */
+.letter{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%) translateY(40px);
+  width: 78%;
+  height: 78%;
+  background: rgba(255,255,255,0.98);
+  border-radius: 14px;
+  z-index: 2;
+  transition: transform 600ms cubic-bezier(.2,.9,.2,1),
+              width 600ms cubic-bezier(.2,.9,.2,1),
+              max-height 600ms cubic-bezier(.2,.9,.2,1),
+              border-radius 600ms cubic-bezier(.2,.9,.2,1);
+  overflow: hidden;
+}
+
+/* inside content */
+.letter-inner{
+  padding: 22px 22px 18px;
+}
+
+/* ======================================================
+   CENTER OPEN LETTER BEGIN
+   Paste Location: inside your "LETTER EXPANDS..." section
+====================================================== */
+
+.intro-overlay.is-open .letter {
+  position: fixed;
+  /* Center the element */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important; /* Forces true center */
+
+  /* Responsive sizing */
+  width: min(760px, 92vw);
+  max-height: min(85vh, 720px); 
+  height: auto;
+  overflow-y: auto;
+
+  border-radius: 18px;
+  z-index: 999999;
+
+  box-shadow: 0 26px 80px rgba(0,0,0,0.22);
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* ======================================================
+   CENTER OPEN LETTER END
+====================================================== */
+.intro-overlay.is-open{
+  background:
+    radial-gradient(1200px 600px at 30% 0%, rgba(255, 255, 255, 0.55), transparent 58%),
+    radial-gradient(900px 500px at 80% 10%, rgba(255, 255, 255, 0.35), transparent 60%),
+    linear-gradient(to bottom, var(--bg2), var(--bg));
+}
+
+
+
+/* Make the text look like a real letter */
+.letter-title{
+  margin: 0 0 14px;
+  fo
+}
+
+/* ======================================================
+   CLICK-OPEN OVERRIDES END
+====================================================== */
+
+
+/* ======================================================
+   INTRO ENVELOPE OVERLAY END
+====================================================== */
 
